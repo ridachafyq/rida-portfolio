@@ -139,8 +139,8 @@ position: relative;
 .cg{display:grid;grid-template-columns:1fr 1.35fr;gap:4rem;align-items:start}
 .cl h3{font-family:var(--font-h);font-size:1.25rem;font-weight:600;margin-bottom:.7rem;letter-spacing:-.02em}
 .cl p{color:var(--muted);font-size:.92rem;line-height:1.7;margin-bottom:1.8rem}
-.cr{display:flex;align-items:center;gap:.8rem;font-family:var(--font-m);font-size:.76rem;color:var(--muted);padding:.75rem 0;border-bottom:1px solid var(--card-b)}
-.cr svg{color:#3289fa;flex-shrink:0}.cr a{color:white;text-decoration:none;transition:color .2s}.cr a:hover{color:#3f1af8;text-decoration:underline;}
+.cr{display:flex;align-items:center;gap:.8rem;}
+.cr svg{color:#3289fa;}
 .cform{background:var(--card);border:1px solid var(--card-b);border-radius:14px;padding:2rem;backdrop-filter:blur(20px)}
 .fg{margin-bottom:1.1rem}.fg label{display:block;font-family:var(--font-m);font-size:.63rem;color:var(--cyan2);letter-spacing:.1em;text-transform:uppercase;margin-bottom:.45rem}
 .fg input,.fg textarea{width:100%;background:rgba(255,255,255,.04);border:1px solid var(--card-b);border-radius:7px;padding:.8rem 1rem;color:var(--text);font-family:var(--font-b);font-size:.9rem;outline:none;resize:none;transition:border-color .25s,box-shadow .25s}
@@ -222,8 +222,13 @@ body:has(.mob-menu.open) #btt.vis {
   .nav-links,.nav-badge{display:none}
   .hamburger{display:flex}
   footer{flex-direction:column;text-align:center}
-
+  .link{margin:0 auto}
 }
+.link{display:block;padding:.75rem;border:1px solid rgb(255, 255, 255);margin-bottom: 1rem;text-decoration: none;color: white;place-items: center;max-width:350px;border-radius: 25px;transition:.5s ease;}
+.link:hover{transform:scale(1.06);background-color: #006eff;box-shadow:0 0 24px rgba(255, 255, 255, 0.291);transform:translateY(-2px);border:none;}
+
+.link:hover .cr svg{color:black;}
+
 </style>
 </head>
 <body>
@@ -460,9 +465,9 @@ body:has(.mob-menu.open) #btt.vis {
         <h2 class="sec-title" style="margin-bottom:1rem">Let's Build<br>Something.</h2>
         <p>Open to full-stack roles, backend positions, internships, and collaboration. Strong foundations + fast learner = real value from day one.</p>
 
-        <div class="cr"><svg  width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg><a href="https://github.com/ridachafyq" target="_blank">github.com/ridachafyq</a></div>
-        <div class="cr"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/></svg><a href="https://linkedin.com/in/ridachafyq/" target="_blank">linkedin.com/ridachafyq</a></div>
-        <div class="cr"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span style="color:white;">Marrakech, Morocco</span></div>
+       <a class="link" href="https://github.com/ridachafyq" target="_blank"><div class="cr"><svg  width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>github.com/ridachafyq</div></a> 
+       <a class="link" href="https://linkedin.com/in/ridachafyq/" target="_blank"><div class="cr"><svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452z"/></svg>linkedin.com/ridachafyq</div></a> 
+       <a class="link"><div class="cr"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg><span>Marrakech, Morocco</span></div></a> 
       </div>
 
       <div class="cform reveal" id="cform">
