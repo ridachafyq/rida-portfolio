@@ -50,10 +50,16 @@ nav{position:fixed;top:0;left:0;right:0;height:60px;display:flex;align-items:cen
 .av-circle{width:200px;height:200px;border-radius:50%;background:linear-gradient(135deg,#1a1a1a,#0d0d0d);border:1.5px solid rgba(255,255,255,.25);display:flex;align-items:center;justify-content:center;box-shadow:0 0 50px rgba(255,255,255,.07),inset 0 0 30px rgba(255,255,255,.03);position:relative;z-index:1;margin-bottom:1.5rem;}
 
 .kicker{font-family:var(--font-m);font-size:.7rem;color:var(--cyan);letter-spacing:.2em;text-transform:uppercase;margin-bottom:.9rem;opacity:0;animation:fadeUp .7s .1s ease forwards}
-.h-name{font-family:var(--font-b);font-size:clamp(3rem,8vw,8rem);font-weight:700;letter-spacing:-.04em;line-height:.92;margin-bottom:1.3rem;opacity:0;animation:fadeUp .7s .25s ease forwards}
-.h-name .stroke{-webkit-text-stroke:2px #ffffff;color:transparent}
 .h-title{max-width:580px;font-size:1.03rem;font-weight:400;color:var(--muted);line-height:1.65;margin-bottom:2rem;opacity:0;animation:fadeUp .7s .4s ease forwards}
 .h-title strong{color:var(--text);font-weight:500}
+.h-name{font-family:var(--font-h);font-size:clamp(3rem,8vw,8rem);font-weight:700;letter-spacing:-.04em;line-height:.92;margin-bottom:1.3rem;opacity:0;animation:fadeUp .7s .25s ease forwards}
+
+.h-name .stroke{
+
+  -webkit-text-stroke: 2px #ffffff;
+  color: transparent;
+  paint-order: stroke fill;
+}
 
 .h-actions{display:flex;gap:1rem;opacity:0;animation:fadeUp .7s .65s ease forwards;flex-wrap:wrap;justify-content:center;}
 .btn{display:inline-flex;align-items:center;justify-content:center;padding:0.6rem 1.2rem;border-radius:5px;text-decoration:none;transition:all .25s;cursor:pointer;border:none;}
@@ -207,6 +213,7 @@ body:has(.mob-menu.open) #btt.vis {
   .av-circle{width:160px;height:160px;}
   .av-orbit{width:175px;height:175px;}
   .h-name{font-size:clamp(2.8rem,12vw,5rem);}
+  .h-name .stroke{-webkit-text-stroke: 1.5px #ffffff;}
   .h-title{font-size:.93rem;text-align:center;margin:0 auto 1.5rem;}
   .h-actions{justify-content:center;}
 }
@@ -216,7 +223,7 @@ body:has(.mob-menu.open) #btt.vis {
   .av-circle{width:130px;height:130px;}
   .av-orbit{width:145px;height:145px;}
   .h-name{font-size:clamp(2.4rem,13vw,3.8rem);line-height: 1.0;}
- .h-name .stroke {
+   .h-name .stroke {
   -webkit-text-stroke: 1.5px #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
