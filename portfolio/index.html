@@ -215,7 +215,14 @@ body:has(.mob-menu.open) #btt.vis {
   .avatar-wrap{width:130px;height:130px;}
   .av-circle{width:130px;height:130px;}
   .av-orbit{width:145px;height:145px;}
-  .h-name{font-size:clamp(2.4rem,13vw,3.8rem);}
+  .h-name{font-size:clamp(2.4rem,13vw,3.8rem);line-height: 1.0;}
+ .h-name .stroke {
+  -webkit-text-stroke: 1.5px #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  transform: translateZ(0); 
+  paint-order: stroke fill;
+}
   .h-title{font-size:.86rem;}
   .h-actions{gap:.7rem;}
   .btn{padding:.55rem 1rem;font-size:.85rem;}
