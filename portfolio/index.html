@@ -193,7 +193,7 @@ footer{padding:40px 5% 28px;border-top:1px solid var(--card-b);display:flex;alig
 .footer-logo{font-family:var(--font-h);font-weight:800;font-size:1.2rem;display:flex;align-items:center;gap:8px}
 .footer-copy{font-family:var(--font-m);font-size:.72rem;color:var(--muted);margin:0 auto;}
 .footer-copy span{color:var(--orange)}
-.footer-links{display:flex;gap:18px}
+.footer-links{display:flex;gap:18px;margin-right: 1.5rem;}
 .footer-links a{font-family:var(--font-m);font-size:.72rem;color:var(--muted);transition:color .2s}
 .footer-links a:hover{color:var(--orange)}
 #btt{position:fixed;bottom:1.8rem;right:1.8rem;width:46px;height:46px;background:var(--orange);border:none;border-radius:50%;display:flex;align-items:center;justify-content:center;cursor:none;color:#fff;opacity:0;pointer-events:none;transition:all .3s;z-index:998;box-shadow:0 6px 20px rgba(255,98,0,.4)}
@@ -210,7 +210,7 @@ footer{padding:40px 5% 28px;border-top:1px solid var(--card-b);display:flex;alig
 /* RESPONSIVE */
 @media(max-width:960px){.contact-grid{grid-template-columns:1fr;gap:40px}}
 @media(max-width:800px){#hero{grid-template-columns:1fr;padding-top:90px;text-align:center;min-height:auto;padding-bottom:60px}.hero-left{padding-left:0;order:2}.hero-right{order:1;height:auto;padding:20px 0 10px}.hero-subtitle,.hero-actions{justify-content:center}.social-sidebar{display:none}.av-circle{width:180px;height:180px}.av-orbit{width:196px;height:196px}.avatar-wrap{width:180px;height:180px}}
-@media(max-width:600px){.split{grid-template-columns: 1fr;}.nav-links,.btn-hire{display: none;}.hamburger{display:flex}.about-checks{grid-template-columns:1fr}.stats-row{display: none;}.proj-grid{grid-template-columns:1fr}footer{flex-direction:column;text-align:center}.footer-links{justify-content:center}}
+@media(max-width:600px){.split{grid-template-columns: 1fr;}.nav-links,.btn-hire{display: none;}.hamburger{display:flex}.about-checks{grid-template-columns:1fr}.stats-row{display: none;}.proj-grid{grid-template-columns:1fr}footer{flex-direction:column;text-align:center}.footer-links{justify-content:center;margin-right:0 ;}}
 body:has(.mob-menu.open) #btt.vis {
 
   opacity: 0;
@@ -503,7 +503,8 @@ body:has(.mob-menu.open) #btt.vis {
       </div>
       <div class="cform reveal" id="cform">
         <div class="fg"><label>Name</label><input id="inp-fname" type="text" placeholder="Your name"/></div>
-        <div class="fg"><label>Email</label><input id="inp-email" type="email" placeholder="your@email.com"/></div>
+        <div class="fg"><label>Email</label><input id="inp-
+          " type="email" placeholder="your@email.com"/></div>
         <div class="fg"><label>Message</label><textarea id="inp-message" placeholder="Tell me about the role or project..."></textarea></div>
         <button class="btn-send" id="sendBtn" onclick="sendMsg()">Send Message →</button>
         <div class="f-ok" id="fOk">✦ Received! I'll reply shortly.</div>
